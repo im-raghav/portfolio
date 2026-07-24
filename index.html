@@ -986,7 +986,7 @@
 <!-- FOOTER -->
 <footer>
   <p class="footer-text">
-    Designed & built by <span>Himanshu Raghav</span> · <span>2024</span>
+    Designed & built by <span>Himanshu Raghav</span> · <span id="footer-year"></span>
   </p>
 </footer>
 
@@ -1068,6 +1068,9 @@
       setTimeout(() => { btn.textContent = originalText; btn.style.background = ''; btn.disabled = false; }, 3000);
     }
   }
+
+  // Footer year
+  document.getElementById('footer-year').textContent = new Date().getFullYear();
 </script>
 </body>
 </html>
