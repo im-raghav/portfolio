@@ -450,6 +450,32 @@
       margin-bottom: 1rem;
     }
 
+    .other-projects-title {
+      font-size: 0.75rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--muted);
+      margin: 3rem 0 1rem;
+      font-family: 'Fira Code', monospace;
+    }
+    .other-projects-list { display: flex; flex-direction: column; gap: 0.75rem; }
+    .other-project-item {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 0.5rem 1.25rem;
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 0.9rem 1.25rem;
+      transition: border-color 0.2s;
+    }
+    .other-project-item:hover { border-color: var(--accent); }
+    .other-project-item .op-name { font-size: 0.9rem; font-weight: 700; color: var(--text); flex: 0 0 auto; }
+    .other-project-item .op-desc { font-size: 0.8rem; color: var(--muted); flex: 1 1 280px; }
+    .other-project-item .op-tech { font-size: 0.72rem; color: var(--accent3); font-family: 'Fira Code', monospace; flex: 0 0 auto; }
+
     /* ===== EDUCATION ===== */
     #education { background: var(--bg2); }
     .edu-card {
@@ -843,40 +869,38 @@
     <div class="projects-grid fade-up">
 
       <div class="project-card">
-        <div class="project-icon">🧠</div>
-        <div class="project-title">GAN Fake Image Detection Framework</div>
-        <div class="project-accuracy">✦ 99%+ Accuracy</div>
+        <div class="project-icon">🗄️</div>
+        <div class="project-title">Enterprise Digital Asset Management Platform</div>
+        <div class="project-accuracy">✦ Production System</div>
         <p class="project-desc">
-          A novel neural model-based framework for detecting GAN-generated fake images using a
-          combination of frequency spectrum analysis and deep learning. Conducted experiments on
-          ~1000 images using unconditional data modeling (StyleGAN2-ADA), achieving state-of-the-art results.
+          A scalable, enterprise-grade digital asset management platform for organizing, searching,
+          and governing large media libraries. Built end-to-end — from database schema and
+          access-control design to AI-assisted metadata generation and a CDN-backed delivery pipeline.
         </p>
         <div class="project-tech">
-          <span class="tech-tag">Deep Learning</span>
-          <span class="tech-tag">Machine Learning</span>
-          <span class="tech-tag">Python</span>
-          <span class="tech-tag">StyleGAN2-ADA</span>
-          <span class="tech-tag">Frequency Spectrum</span>
+          <span class="tech-tag">Next.js</span>
+          <span class="tech-tag">PostgreSQL</span>
+          <span class="tech-tag">AWS (EC2/RDS)</span>
+          <span class="tech-tag">Docker</span>
+          <span class="tech-tag">AI/LLM Integration</span>
+          <span class="tech-tag">CDN Pipeline</span>
         </div>
       </div>
 
-      <div class="project-card">
-        <div class="project-icon">📷</div>
-        <div class="project-title">CCTV Surveillance System (RaspberryPi)</div>
-        <p class="project-desc">
-          Real-time intelligent CCTV camera surveillance system powered by a machine learning model
-          trained using Ensemble Learning. Implemented using OpenCV and Raspberry Pi's camera module
-          for live inference and monitoring.
-        </p>
-        <div class="project-tech">
-          <span class="tech-tag">OpenCV</span>
-          <span class="tech-tag">RaspberryPi</span>
-          <span class="tech-tag">Machine Learning</span>
-          <span class="tech-tag">Python</span>
-          <span class="tech-tag">Ensemble Learning</span>
-        </div>
-      </div>
+    </div>
 
+    <div class="other-projects-title">// other projects & research</div>
+    <div class="other-projects-list fade-up">
+      <div class="other-project-item">
+        <span class="op-name">🧠 GAN Fake Image Detection Framework</span>
+        <span class="op-desc">Neural framework detecting GAN-generated fake images via frequency spectrum analysis + deep learning (StyleGAN2-ADA), 99%+ accuracy.</span>
+        <span class="op-tech">Deep Learning · Python · StyleGAN2-ADA</span>
+      </div>
+      <div class="other-project-item">
+        <span class="op-name">📷 CCTV Surveillance System (RaspberryPi)</span>
+        <span class="op-desc">Real-time intelligent surveillance using an Ensemble Learning model with OpenCV on Raspberry Pi.</span>
+        <span class="op-tech">OpenCV · RaspberryPi · Ensemble Learning</span>
+      </div>
     </div>
   </div>
 </section>
