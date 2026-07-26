@@ -483,6 +483,8 @@
     }
     .other-project-item:hover { border-color: var(--accent); }
     .other-project-item .op-name { font-size: 0.9rem; font-weight: 700; color: var(--text); flex: 0 0 auto; }
+    .other-project-item .op-name a { color: inherit; text-decoration: none; }
+    .other-project-item .op-name a:hover { color: var(--accent); text-decoration: underline; }
     .other-project-item .op-desc { font-size: 0.8rem; color: var(--muted); flex: 1 1 280px; }
     .other-project-item .op-tech { font-size: 0.72rem; color: var(--accent3); font-family: 'Fira Code', monospace; flex: 0 0 auto; }
 
@@ -776,7 +778,7 @@
           <ul class="job-bullets">
             <li>Led full-stack development of <strong>PushPolitics</strong>, a civic engagement platform connecting supporters with politicians across all levels of Canadian government. Designed system architecture, built responsive front-end components, developed RESTful APIs, and integrated <strong>NationBuilder</strong>.</li>
             <li>Contributed to large-scale national campaigns — <strong>Pariksha Pe Charcha</strong> and <strong>Mann Ki Baat</strong> — supporting high-traffic, event-driven user interactions with performance optimization and real-time data handling.</li>
-            <li>Developed and maintained the <strong>Narendra Modi website and mobile app</strong>, delivering a secure, scalable, and multilingual experience with dynamic CMS integration.</li>
+            <li>Developed and maintained the <strong>Narendra Modi website and mobile app</strong> (10M+ app downloads), delivering a secure, scalable, and multilingual experience with dynamic CMS integration.</li>
             <li>Built a <strong>media asset management system</strong> for organizing physical assets across audio, video, and photo formats with optimized database design.</li>
             <li>Developed multiple CMS-powered microsites (23 pages each) with responsive UI and fast-loading architecture for quick deployment and maintainability.</li>
           </ul>
@@ -853,6 +855,8 @@
         <div class="skill-tags">
           <span class="skill-tag">AWS (EC2/RDS)</span>
           <span class="skill-tag">Docker</span>
+          <span class="skill-tag">Kubernetes</span>
+          <span class="skill-tag">Terraform</span>
           <span class="skill-tag">Vercel</span>
           <span class="skill-tag">CI/CD</span>
           <span class="skill-tag">CDN & Media Pipelines</span>
@@ -862,8 +866,6 @@
         <div class="skill-group-title">AI/ML</div>
         <div class="skill-tags">
           <span class="skill-tag">LLM API Integration</span>
-          <span class="skill-tag">TensorFlow</span>
-          <span class="skill-tag">Keras</span>
         </div>
       </div>
     </div>
@@ -902,8 +904,8 @@
     <div class="other-projects-title">// other projects & research</div>
     <div class="other-projects-list fade-up">
       <div class="other-project-item">
-        <span class="op-name">🧠 GAN Fake Image Detection Framework</span>
-        <span class="op-desc">Neural framework detecting GAN-generated fake images via frequency spectrum analysis + deep learning (StyleGAN2-ADA), 99%+ accuracy.</span>
+        <span class="op-name">🧠 <a href="https://ieeexplore.ieee.org/document/9377150" target="_blank">GAN Fake Image Detection Framework</a></span>
+        <span class="op-desc">Neural framework detecting GAN-generated fake images via frequency spectrum analysis + deep learning (StyleGAN2-ADA), 99%+ accuracy. Published in IEEE.</span>
         <span class="op-tech">Deep Learning · Python · StyleGAN2-ADA</span>
       </div>
       <div class="other-project-item">
